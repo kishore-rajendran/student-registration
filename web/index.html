@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  border-radius: 4px;
+  background-color: dodgerblue;
+    color: white;
+  border: none;
+margin-left:auto;margin-right:auto;display:block;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body style="background-color: #cccccc;">
+<img src="logotrans.png" style="width:128px;height:128px;top:2;display: block;
+    margin-left: auto;
+    margin-right: auto;">
+<div>
+<button class="button"  onclick="location.href='registration.html' "><span>Registration </span></button><br>
+<button class="button"  onclick="location.href='update.html' "><span>Update </span></button><br>
+<button class="button"  onclick="location.href='delete.html' "><span>Delete </span></button><br>
+</div>
+
+</body>
+</html>
